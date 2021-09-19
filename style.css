@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: url("img/background.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.container{
+    width: 800px; 
+    min-height: 500px;
+    border: 10px solid #fff;
+    margin: 0 auto;
+    background: #fff;
+}
+
+header{
+    display: flex;
+    height: 110px;
+}
+
+.logo{
+    position: relative;
+    display: flex;
+    width: 65%;
+    align-items: center;
+    height: 100%;
+    background: url("img/code.jpg") no-repeat center center / cover;
+    margin-right: 15px;
+    
+}
+
+.logo::after{
+    content: '';
+    background:black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.social_links{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    background: url("img/code.jpg") no-repeat center center / cover;    
+}
+.social_link::after{
+    content: '';
+    background:black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.social_logo{
+    width: 32px;
+    vertical-align: middle;
+    height: 32px;
+    margin-bottom: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+.social_link{
+    color: #fff;
+    font-weight: bold;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+}
+.social_link:hover{
+    text-decoration: none;
+}
+
+.social_link:visited{
+    text-decoration: none;
+    color: #fff;
+}
+.social_link:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    margin-top: 5px;
+    background: rgb(216, 214, 214);
+}
+
+nav ul li{
+    padding: 20px;
+    border-right: 1px solid white;
+    transition: background .3s ease-in-out;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+}
+
+nav ul li:hover{
+    background: rgb(182, 180, 180);
+}
+
+.content-wrapper{
+    display: flex;
+    height: 100%;
+}
+
+.content{
+    width: 70%;
+    height: 100%;
+    margin-right: 20px;
+}
+h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.category{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item{
+    padding: 5px;
+    transition: transform .5s ease;
+}
+
+.item:hover{
+    transform: translateX(10px);
+}
+
+footer{
+    width: 820px;
+    margin-bottom: -10px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: -10px;
+    background: rgb(216, 214, 214);
+}
